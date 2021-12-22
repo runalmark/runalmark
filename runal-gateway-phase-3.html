@@ -1,0 +1,1299 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Runal Gateway Phase - III - 2 & 3 BHK Flats for Sale in Kiwale</title>
+		<link href='https://fonts.googleapis.com/css?family=Poppins|Lato' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="assets/css/themify/themify-icons.css" />
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/landing.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+		<script src="assets/jq/jquery-3.1.0.js"></script>
+		<script>
+		    var download = 0;
+			function validate_me(z)
+			{
+
+				var name_val = document.getElementById(z).elements.namedItem("name").value;
+				var mobile_val = document.getElementById(z).elements.namedItem("mobile").value;				
+				var email_val = document.getElementById(z).elements.namedItem("email").value;	
+
+				if (name_val == "") {
+					alert('Please enter name.')
+					return false;
+				}
+				if (email_val == "") {
+					alert('Please enter Email Id.')
+					return false;
+				}
+
+				var at_the = email_val.indexOf("@");
+				var dot = email_val.indexOf(".");
+				var split_at = email_val.split("@");
+				var split_dot = email_val.split(".");
+				if (split_at.length > 2) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				else if (dot == -1 || at_the == -1) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z0-9.]+$/i.test(split_at[1]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[0-9.]+$/i.test(split_at[0]) == true) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z0-9]+$/i.test(split_at[2]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z]+$/i.test(split_dot[split_dot.length - 1]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				var spli_at_dot = split_at[1].split(".");
+				if (/^[0-9.]+$/i.test(spli_at_dot[0]) == true) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				// }
+				if (mobile_val.length != 10) {
+					alert('Mobile number should be 10 digit long.')
+					return false;
+				}				
+				$('.book_now').attr('disabled','disabled');
+				$.post('landing.php',{name : name_val, email : email_val, mobile : mobile_val},function(resp){
+					$('.book_now').removeAttr('disabled','disabled');				
+					$('.overlayZ').css('display','none');
+					$('#msg').css('display','block');
+					
+					if(download != 0)
+					{
+					    
+					    $('#' + download + ' span').trigger('click'); 
+					  
+					}
+					window.location.href = "Thankyou-apartments.html";					
+					download = 0;
+					
+				});
+				
+				return false;
+			}
+		</script>			
+		
+		
+	
+		
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGLT8C7');</script>
+<!-- End Google Tag Manager -->
+		
+		
+	
+	<!--script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=98ad5b280d1cc' async='true'></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c35beb612db2461b16b54dd/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+		
+	</head>
+	
+	
+	
+	
+	
+	<body>
+	    <!-- SUBMIT FORM -->
+	    <a id="pdflnk" href="https://runal.com/pdf/Runal-Gateway-Phase-3-E-Broucher-V1.pdf" target="_blank" download><span></span></a>
+	    <a id="pdflnk2" href="https://runal.com/pdf/gateway-specs.pdf" target="_blank" download><span></span></a>	    
+	    <div id="frm" class="overlayZ">
+			<div class="box">
+			    <div class="box_heading pull-left">Please Enter Your Details</div>
+				<div class="closeZ pull-right"><span onclick="$('.overlayZ').css('display','none');" style="color:#222 !important;" class="ti-close"></span></div>				
+			    <form id="form4" action="" onsubmit="return validate_me('form4')" class="form_wid_padding">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div>
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="disclaimer.html" target="_blank">privacy policy</a></small></h5>
+						
+					</div>
+			        <button class="btn btn-primary btn-sm book_now">
+					    Submit
+					</button>
+				</form>
+			</div>		
+		</div>
+	    <!-- SUBMIT FORM ends -->
+		<div id="msg" class="overlayZ">
+			<div class="box">
+				<div class="closeZ pull-right"><span onclick="$('.overlayZ').css('display','none');" style="color:#222 !important;" class="ti-close"></span></div>				
+				<div class="title">Thank You!</div>
+				<div class="desc">We will contact you shortly.</div>				
+			</div>		
+		</div>		    
+		<div class="col-sm-12 col-xs-12 landing_container zero_padding">
+			<div class="product_image col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="overlay"></div>
+				<img src="assets/images/phase-3-banner.jpg" class="banner_image" />
+				<div class="product_image_text_top col-sm-12 col-xs-12">
+					<div class="container">
+						<div class="col-sm-12 col-xs-12 small_text_banner">2 & 3 BHK Residential Apartments </div>
+						
+						<div class="col-sm-12 col-xs-12 small_text_banner">
+							<span class="big_text_banner">Runal Gateway Phase - III</span>, Kiwale Ravet, Pune
+						</div>
+					</div>
+				</div>
+				<img src="assets/images/logo.jpg" class="landing_banner_logo_img" />
+				<div class="mobile_landing_top">
+					<a href="tel:9595300100">+ 91 9595 300 100</a>
+				</div>
+				<nav class="nav navbar-fixed-top hidden_navbar">
+					<div class="container">
+						<ul class="nav navbar-nav">
+							<li><a href="#overview" class="black_text">Overview</a></li>
+							<li><a href="#unit_details" class="black_text">Unit Details</a></li>
+							<li><a href="#gallery" class="black_text" >Gallery</a></li>
+							<li><a href="#amenities" class="black_text">Amenities</a></li>
+							<li><a href="#specifications" class="black_text">Specifications</a></li>
+							<li><a href="#location" class="black_text" >Location</a></li>
+							<li><a href="#about_us" class="black_text" >About Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="container product_details">
+				<div class="fixed_price_div">
+					<div class="text-center light_color">
+						<h5>MahaRERA No. P52100024155</h5>
+					</div>
+					<div class="text-center fixed_price_heading">
+						<div class="light_color price_heading_subs">I'm interested to buy property</div>
+						<div class="dark_color price_heading_head">Runal Gateway Phase - III</div>
+					</div>
+					<div class="margin_top_10">
+					    <form id="form1" action="" onsubmit="return validate_me('form1');">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+					</div>
+					<div class="book_now_div">
+						<button class="btn btn-default book_now">
+							<small class="glyphicon glyphicon-phone-alt"></small> 
+							&nbsp;Get Call Back
+						</button>
+						</form>
+					</div>
+					<!--div class="text-center">
+						<h5><small class="text-uppercase">We never spam</small></h5>
+					</div-->
+					<div class="text-center">
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="disclaimer.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+				</div>
+				<div class="fixed_price_div_hidden">
+					<div class="text-center light_color">
+						<h5>MahaRERA No. P52100024155</h5>
+					</div>
+					<div class="text-center fixed_price_heading">
+						<div class="light_color price_heading_subs">I'm interested to buy property in</div>
+						<div class="dark_color price_heading_head">Runal Gateway Phase - III</div>
+					</div>
+					<div class="margin_top_10">
+					    <form id="form2" action="" onsubmit="return validate_me('form2')">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+					</div>
+					<div class="book_now_div">
+						<button class="btn btn-default book_now">
+							<small class="glyphicon glyphicon-phone-alt"></small> 
+							&nbsp;Get Call Back
+						</button>
+						</form>
+					</div>
+					<!--div class="text-center">
+						<h5><small class="text-uppercase">We never spam</small></h5>
+					</div-->
+					<div class="text-center">
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="disclaimer.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+				</div>
+				<div class="product_description col-lg-8 col-md-7 col-sm-12 col-xs-12">
+					<div class="price_div zero_padding col-sm-12 col-xs-12">
+						<div class="text-center fixed_price_heading">
+							<div class="light_color price_heading_subs zero_padding">I'm interested to buy property in</div>
+							<div class="dark_color price_heading_head zero_padding">Runal Gateway</div>
+						</div>
+						<div class="margin_top_10">
+                        <form id="form3" action="" onsubmit="return validate_me('form3')">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+						</div>
+						<div class="book_now_div">
+							<button class="btn btn-default book_now">
+								<small class="glyphicon glyphicon-phone-alt"></small> 
+								&nbsp;Get Call Back
+							</button>
+							</form>
+						</div>
+						<!--div class="text-center">
+							<h5><small class="text-uppercase">We never spam</small></h5>
+						</div-->
+						<div class="text-center">
+							<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="disclaimer.html" target="_blank">privacy policy</a></small></h5>
+						</div>
+					</div>
+					<div class="col-sm-12 col-xs-12 zero_padding">
+						<ul class="nav navbar-nav landing_page_visible_navigation hidden-xs">
+							<li class="active"><a href="#overview" class="black_text visible_nav_a">Overview</a></li>
+							<li><a href="#unit_details" class="black_text visible_nav_a">Unit Details</a></li>
+							<li><a href="#gallery" class="black_text visible_nav_a" >Gallery</a></li>
+							<li><a href="#amenities" class="black_text visible_nav_a">Amenities</a></li>
+							<li><a href="#specifications" class="black_text visible_nav_a">Specifications</a></li>
+							<li><a href="#location" class="black_text visible_nav_a" >Location</a></li>
+							<li><a href="#about_us" class="black_text visible_nav_a" >About Us</a></li>
+						</ul>
+					</div>
+					<div class="overview zero_padding col-sm-12 col-xs-12" id="overview">
+						<div class="main_heading">Property Highlights</div>
+						<div class="content">
+							<div class="col-sm-12 col-xs-12 zero_padding">
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/Apartment.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">2 & 3 BHK</div>
+										<div class="content_description light_color"><small>Plush Residences</small></div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/area.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Carpet Area</div>
+										<div class="content_description light_color"><small>831 - 1243 sq. ft.</small></div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/price-tag.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Price</div>
+										<div class="content_description light_color"><small>Rs 71.6 Lac to 1.03 Cr + (gov. taxes)</small></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 zero_padding">
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/key.png">
+									</div>
+									
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Possession</div>
+										<div class="content_description light_color"><small>Dec 2023</small></div>
+									</div> 
+								</div>
+								
+								<!--div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/icon_5.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Dec 2023</div>
+										<div class="content_description light_color"><small>Possession Date(s)</small></div>
+									</div>
+								</div--> 
+								
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<button onclick="download = 'pdflnk';$('#frm').css('display','block');" class="btn btn-default download_btn">Download Brochure</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="inclusion zero_padding col-sm-12 col-xs-12" id="unit_details">
+						<div class="main_heading">Unit Details</div>
+						<div class="content col-sm-12 col-xs-12">
+							<ul class="nav nav-tabs customized_landing_tabs">
+							
+							    <li  class="active"><a data-toggle="tab" href="#unit_details_two_bhk">2 BHK</a></li>
+							    <li><a data-toggle="tab" href="#unit_details_three_bhk">3 BHK</a></li>
+								
+							
+							
+							</ul>
+							<div class="tab-content col-sm-12 col-xs-12">
+							
+							<div id="unit_details_two_bhk" class= "col-sm-12 col-xs-12 tab-pane fade in active zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding table-responsive">
+										<table class="col-sm-12 col-xs-12 table landing_custom_table zero_padding">
+											<thead>
+												<tr>
+													<th>Carpet Area</th>
+													<th>Builder Price</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+											    <tr>
+													
+													<td>
+														<div class="dark_color">831 sq ft</div>
+														<small class="light_color">(2BHK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">71.6 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												
+												<tr>
+													
+													<td>
+														<div class="dark_color">832 sq ft</div>
+														<small class="light_color">(2BHK+1T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">71.7 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													
+													<td>
+														<div class="dark_color">836 sq ft</div>
+														<small class="light_color">(2BHK+2T)</small>
+
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">72.0 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">847 sq ft</div>
+														<small class="light_color">(2BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">72.9 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">855 sq ft</div>
+														<small class="light_color">(2BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">73.5 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">862 sq ft</div>
+														<small class="light_color">(2BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">74.0 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+													<tr>
+													<td>
+														<div class="dark_color">883 sq ft</div>
+														<small class="light_color">(2BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">75.7 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">891 sq ft</div>
+														<small class="light_color">(2BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">76.3 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							
+								<div id="unit_details_three_bhk" class="col-sm-12 col-xs-12 tab-pane fade in zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding table-responsive">
+									
+									
+										<table class="col-sm-12 col-xs-12 table landing_custom_table zero_padding">
+											<thead>
+												<tr>
+													<th>Carpet Area</th>
+													<th>Builder Price</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="dark_color">1168 sq ft</div>
+														<small class="light_color">(3BHK+1T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">98.0 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1169 sq ft</div>
+														<small class="light_color">(3BHK+1T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">98.1 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1176 sq ft</div>
+														<small class="light_color">(3BHK+1T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">98.7 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1178 sq ft</div>
+														<small class="light_color">(3BHK+1T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">98.8 L</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1232 sq ft</div>
+														<small class="light_color">(3BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">1.03 Cr</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1233 sq ft</div>
+														<small class="light_color">(3BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">1.03 Cr</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1241 sq ft</div>
+														<small class="light_color">(3BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">1.03 Cr</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">1243 sq ft</div>
+														<small class="light_color">(3BHK+2T)</small>
+													</td>
+													<td>
+														<h4 class="rupee_symbol_before">1.03 Cr</h4>
+														<small class="light_color"> +(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Request for Breakup</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+									
+							</div>
+						</div>
+					</div>
+					<div class="inclusion zero_padding col-sm-12 col-xs-12" id="gallery">
+						<div class="main_heading">Gallery</div>
+						<div class="content col-sm-12 col-xs-12">
+							<ul class="nav nav-tabs customized_landing_tabs">
+								<li class="active"><a data-toggle="tab" href="#elevation">Elevation</a></li>
+								<li><a data-toggle="tab" href="#floor_plans">Floor Plans</a></li>
+								<!--li><a data-toggle="tab" href="#neighbourhood">Construction Updates</a></li-->
+								<!--li><a data-toggle="tab" href="#walkthrough">Walkthrough</a></li-->
+							</ul>
+							<div class="tab-content col-sm-12 col-xs-12">
+								<div id="elevation" class="col-sm-12 col-xs-12 tab-pane fade in active">
+								<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/elevation-phase3.jpg"><img src="assets/images/elevation-phase3.jpg" class="preloading"></a>
+										</div>
+									</div>
+									
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/master-layout-3.jpg"><img src="assets/images/master-layout-3.jpg" class="preloading"></a>
+										</div>
+									</div>
+									
+									
+								
+									
+								</div>
+								<div id="floor_plans" class="col-sm-12 col-xs-12 tab-pane fade">
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/floorplan/Phase-3-E-wing-even.jpg"><img src="assets/images/floorplan/Phase-3-E-wing-even.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/floorplan/Phase-3-E-wing-odd.jpg"><img src="assets/images/floorplan/Phase-3-E-wing-odd.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									
+									
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/floorplan/Phase-3-F-wing-even.jpg"><img src="assets/images/floorplan/Phase-3-F-wing-even.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/floorplan/Phase-3-F-wing-odd.jpg"><img src="assets/images/floorplan/Phase-3-F-wing-odd.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									
+								</div>
+								<!--div id="neighbourhood" class="col-sm-12 col-xs-12 tab-pane fade">
+								    
+								    <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/july-19.jpg"><img src="assets/images/july-19.jpg" class="preloading"></a>
+										</div>
+									</div>
+								    
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/aug-18.jpg"><img src="assets/images/aug-18.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/aug-17.jpg"><img src="assets/images/aug-17.jpg" class="preloading"></a>
+										</div>
+									</div>	
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/feb-17.jpg"><img src="assets/images/feb-17.jpg" class="preloading"></a>
+										</div>
+									</div>			
+									
+								</div>
+									<!-- div id="walkthrough" class="col-sm-12 col-xs-12 tab-pane fade">
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a href="https://youtu.be/hyzQ6dbRnz4" target="blank"><img src="assets/images/runal-walkthrough.jpg"></a>
+										</div>
+									</div>
+												
+								</div -->
+								
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="top_icons col-sm-12 col-xs-12 zero_padding" id="amenities">
+						<div class="main_heading">Amenities</div>
+						<div class="col-sm-12 col-xs-12 zero_padding">
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Swim-pool.png" />
+								<div class="text">Rooftop Swimming Pool</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Cafe.png" />
+								<div class="text">Rooftop Cafeteria</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Badminton-court.png" />
+								<div class="text">Indoor Badminton court</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Turfcourt.png" />
+								<div class="text">Turf Court</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/gym.png" />
+								<div class="text">Modern Gymnasium</div>
+							</div>
+							
+							
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/garden.png" />
+								<div class="text">Landscaped Gardens</div>
+							</div>
+							
+						</div>
+						<div class="col-sm-12 col-xs-12 zero_padding">
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/clubhouse.png" />
+								<div class="text">Club House</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Multi-ground.png" />
+								<div class="text">Multipurpose Ground</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/kids-play-area.png" />
+								<div class="text">Kid's Play Area</div>
+							</div>
+								
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/cctv.png" />
+								<div class="text">24x7 Security</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Backup.png" />
+								<div class="text">Power Backup</div>
+							</div>
+						</div>
+					</div>
+					<div class="things_to_remember zero_padding col-sm-12 col-xs-12" id="specifications">
+						<div class="main_heading">Specifications</div>
+						<div class="content spefications_main_container">
+							<div class="col-sm-12 col-xs-12 zero_padding">
+								<div class="col-sm-6 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+										<label>
+										<!--img src="assets/images/enq1.png" /!-->
+											Building & Project
+										</label>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											Reinforced cement concrete structure.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											Water storage tanks as per rules and regulations of the PCMC.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+									    	Letter box for each Apartment in the parking area.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+								    		Firefighting system as per norms.
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding block">
+										 Passenger lifts (2 nos.) and stretcher lift (1no.)  by Otis or equivalent brand.
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+										<label>
+											<!--img src="assets/images/p.png" / !-->
+											Internal
+										</label>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											200 mm external and 160/100 mm internal RCC walls
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											 Kitchen Otta with dado tiles by RAK, Kajaria or equivalent brand, up to 2 ft. level from kitchen platform.
+										</div>
+								    	<div class="col-sm-12 col-xs-12 zero_padding block">
+											 Kitchen platform in composite marble /granite by Kalinga or equivalent premium material. 
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											 Internal wall gypsum finish.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											 Front door, 7’7” tall and 35 mm. thick both side laminated flush door. 
+										</div>
+						    		</div>
+						    	</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 zero_padding text-center spefications_download_btn_block">
+								<button onclick="download = 'pdflnk2';$('#frm').css('display','block');" class="btn btn-default download_btn">Download Complete List</button>
+							</div>
+						</div>
+					</div>
+						<!-- bank code Start!-->
+								<div class="col-sm-12 col-xs-12 zero_padding" id="approvedbank">
+						<div class="main_heading">A Project Approved for Home Loan</div>
+						<div class="col-sm-12 col-xs-12 zero_padding">
+							<div class="bank_icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/bank-icons/tata-capital.jpg" />
+								
+							</div>
+							<div class="bank_icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/bank-icons/sbi-logo.jpg" />
+								
+							</div>
+							<div class="bank_icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/bank-icons/ICICI_home_loan.jpg" />
+							
+							</div>
+							<div class="bank_icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/bank-icons/axis.png" />
+								
+							</div>
+							<div class="bank_icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/bank-icons/pnb.jpg" />
+								
+							</div>
+							<div class="bank_icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/bank-icons/hdfc_home_loans.png" />
+								
+							</div>
+						</div>
+						</div>
+						
+												<!-- bank code End!-->
+						
+					<div class="happening_place zero_padding col-sm-12 col-xs-12" id="location">
+						<div class="main_heading">Location</div>
+						<div class="content">
+							<div id="product_details_map"></div>
+							<div class="content spefications_main_container">
+    							<div class="col-sm-12 col-xs-12 zero_padding">
+    								<div class="col-sm-6 col-xs-12 zero_padding">
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+    										<label>
+    										
+    										</label>
+    									</div>
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Mumbai-Pune Expressway
+    
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												0.60 km
+													</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												D Mart 
+    
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												2.0 km
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Kidzee 
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												3.7 km
+    											</div>
+    										</div>
+											    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Aditya Birla Hospital
+    												</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												5.6 km
+    											</div>
+    										</div>
+    										<!--
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Internal
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Laminatd Flush Door
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Main
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Laminatd Flush Door
+    											</div>
+    										</div> !-->
+    									</div>
+    								</div>
+    								<div class="col-sm-6 col-xs-12 zero_padding">
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+    										<label>
+    											
+    										</label>
+    									</div>
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+
+    										
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    											Hinjawadi IT Park
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												10 km
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Bhumkar Chowk
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												6.8 km 
+    											</div>
+    										</div>
+											<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Aundh-Ravet BRTS Corridor
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												0.75 km
+    											</div>
+    										</div>
+    									<!--	<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Kitchen
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Vitrified Tiles
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Other Bedroom
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Vitrified Tiles
+    											</div>
+    										</div> !-->
+    										
+    									</div>
+    								</div>
+    						    </div>
+						    </div>
+				    	</div>
+				    </div>
+					<div class="happening_place zero_padding col-sm-12 col-xs-12" id="about_us">
+						<div class="main_heading">About Us</div>
+						<div class="content">
+							<div class="col-sm-12 col-xs-12 zero_padding about_us_block">
+								<div class="col-md-5 col-sm-4 col-xs-12 zero_padding about_logo_div">
+									<img src="assets/images/logo.jpg" />
+								</div>
+								<div class="col-md-7 col-sm-8 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding about_us_details_block">
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												25
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Years of</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Experience
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												24
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Total</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Projects
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												02
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Ongoing</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Projects
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding about_us_description">
+										Founded in 1993,  Runal Developers is a real estate construction company that is based in Pune, with a belief based on progressive ideas, trust and reliability. The company has been carving a niche through consistent delivery of awe-inspiring residences and commercial spaces. At Runal Developers, we believe that the value of a human smile is the best value you can derive ever.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 more_properties_block zero_padding">
+								<div class="col-sm-12 col-xs-12 heading zero_padding">  
+								<div class="main_heading">More Properties from Runal Developers</div>	
+								</div>
+								<div id="myCarousel" class="carousel slide col-sm-12 col-xs-12 zero_padding" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+										
+										
+										
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<!-- div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<!--div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<img src="assets/images/runal-gateway.jpg" />
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Apartments, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 BHKs In Kiwale @ 55.8 Lac Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100024155
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">I'm Interested</button>
+													</div -->
+													
+													
+													<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+															<a href="runal-spacio.html"><img src="assets/images/runal-spacio-min.jpg" /></a>
+													</div>
+													<div class="highliter"><span>New Launch</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+													
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Spacio, Kiwale Ravet</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 & 3 RLK Apartments in Kiwale Ravet
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100019467
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+													
+												</div>
+											</div>
+											
+													<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+												    
+												    <div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<img src="assets/images/runal-bunglows.jpg" />
+													</div>
+														<div class="highliter"><span>Sold Out</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Bungalows Phase II, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															3 BHK Bungalows in Kiwale Ravet
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100019500
+														</div>
+													</div>
+													
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="#" class="btn btn-default download_btn">Sold Out</button>
+													</div>
+													
+												    
+													
+												</div>
+											</div>
+										</div>
+										
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												
+												</div>
+											</div>
+										</div>
+										<!--
+										<div class="item">
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<img src="assets/images/runal-bunglows.jpg" />
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway, Ravet Pradhikaran</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															3/ 4 BHKs Bunglows in Ravet @ 1.06 Cr Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100024155
+															MahaRERA No- P52100024155
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												</div>
+											</div>
+										</div> !-->
+										
+										<div class="item">
+									
+									</div>
+									<!--ol class="carousel-indicators more_properties_slider_indicators">
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+										<li data-target="#myCarousel" data-slide-to="2"></li>
+									  </ol-->
+									<!-- Left and right controls -->
+									<!--a class="left carousel-control" href="#myCarousel" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="right carousel-control" href="#myCarousel" data-slide="next">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</a-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 col-xs-12 landing_footer text-center">
+				<div class="col-sm-12 col-xs-12" >
+					For enquiries or site visits:
+				</div>
+				<div class="col-sm-12 col-xs-12">
+					<h1><b>+ 91 9595 300 100</b></h1>
+				</div>
+				<div class="col-sm-12 col-xs-12 text-uppercase dark_color">
+					<h4>SITE ADDRESS:</h4>
+				</div>
+				<div class="col-sm-12 col-xs-12 light_color">
+					<h5>Runal Gateway, Near Sentosa Resorts Ravet, Off Pune-Mumbai Expressway,<br>
+					Pune- 412101 Maharashtra India <h5>
+				</div>
+				<div class="col-sm-12 col-xs-12 light_color">
+					<p> The project has been registered via MahaRERA Registration No.: P52100024155 and avialable on website <a href="https://maharera.mahaonline.gov.in">https://maharera.mahaonline.gov.in</a> under registered projects<p>
+				
+				<!--project finance by !-->
+					<div class="finance_icon_block col-sm-12 col-xs-12  dark_color">
+								
+								<div class="financetext">A Project Financed By</div>
+								<img src="assets/images/bank-icons/tata-capital-n.jpg" />
+							</div>
+					<!--project finance by !-->
+					
+				
+				</div>
+			</div>
+			<div class="col-sm-12 col-xs-12 landing_copyright_footer text-center mb_50">
+				<copy></copy> 2020 - Runal Developers ISO 9001: 2015 Certified | <a href="disclaimer.html" target="_blank">Privacy Policy</a>
+			</div>
+		</div>
+		<script src="assets/jq/bootstrap.min.js"></script>
+		<script src="assets/jq/runal.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4THXHUqfrZeTN3hXqwTDMvnNqRMMr4Do&callback=myMap" type="text/javascript"></script>
+		<script>
+            function myMap() {
+                var mapOptions = {
+                    zoom: 10,
+    				scrollwheel:true,
+    				center: new google.maps.LatLng(18.655661, 73.732016),
+                    styles: [{ "featureType": "road", "elementType": "geometry", "stylers": [{ "visibility": "off"}] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "visibility": "off"}] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#FFFAF0"}] }, { "featureType": "water", "stylers": [{ "color": "#d9edf7"}] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off"}] }, { "featureType": "transit", "stylers": [{ "visibility": "off"}] }, { "featureType": "administrative", "elementType": "geometry", "stylers": [{ "lightness": 40}] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "visibility": "on", "color": "#c5dac6"}] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#CCAA88" }, { "lightness": 40}] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#EEEEEE"}] }, { "featureType": "road", "stylers": [{ "visibility": "simplified" }, { "color": "#FF0000" }, { "gamma": 9}] }, { "featureType": "road.highway", "stylers": [{ "visibility": "on" }, { "color": "#FF0000" }, { "gamma": 8}] }, { "featureType": "road.highway.controlled_access", "stylers": [{ "visibility": "on" }, { "color": "#FF0000" }, { "gamma": 4}] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off"}] }, { "featureType": "poi.government", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#DDDDDD"}] }, { "featureType": "transit.station", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#CCCCCC"}] }, { "featureType": "transit.line", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#AAAAAA" }, { "gamma": 4}]}]
+                }
+                var map = new google.maps.Map(document.getElementById('product_details_map'),
+                                    mapOptions);
+    
+                var image = 'images/pin-gateway.png';
+                var myLatLng = new google.maps.LatLng(18.655661, 73.732016);
+                var beachMarker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+         
+         <!--
+         <div id="slideout"><a href="https://wa.me/919168666409?text= Please%20click%20on%20'Send'%20button%20to%20Schedule%20construction%20site%20visit%20with%20us." target="_blank">
+	        <div class="cta-left"><div class="whatsimg"></div>
+		        <div class="cta-right">Organise Site Visit
+            </div>
+
+                </div> 
+
+            </a>
+            </div>
+		  <!-->
+         
+          
+        <div id="slideout">
+             <a href="https://wa.me/919168666409?text=Hello!%20I'm%20interested%20in%20*Runal%20Gateway%20Phase*%20III*.%20Please%20send%20more%20details.">
+	            <div class="cta-left"><div class="whatsimg"></div>
+    		         <div class="cta-right">Request Call Back</div>
+                </div> 
+            </a>
+        </div>
+        <div class="sticky_enquiry">
+            <div class="sticky_left pull-left">
+            
+            
+                <i class="ti-user"></i>&nbsp;     <href="javascript:void(0);" onclick="download = 0;$('#frm').css('display','block');">Enquire Now
+            </div>
+            <a href="tel:9595300100" class="sticky_right pull-left">
+                <i class="ti-mobile"></i>&nbsp; Call Us
+            </a>
+        </div>
+		  <!-->
+         
+       
+        
+	</body>
+</html>

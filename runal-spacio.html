@@ -1,0 +1,1569 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex" />
+		<title>Runal Spacio - 2 & 3 RLKFlats for Sale in Kiwale Ravet</title>
+		<link href='https://fonts.googleapis.com/css?family=Poppins|Lato' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="assets/css/themify/themify-icons.css" />
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/landing.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+		<script src="assets/jq/jquery-3.1.0.js"></script>
+		<script>
+		    var download = 0;
+			function validate_me(z)
+			{
+
+				var name_val = document.getElementById(z).elements.namedItem("name").value;
+				var mobile_val = document.getElementById(z).elements.namedItem("mobile").value;				
+				var email_val = document.getElementById(z).elements.namedItem("email").value;	
+
+				if (name_val == "") {
+					alert('Please enter name.')
+					return false;
+				}
+				if (email_val == "") {
+					alert('Please enter Email Id.')
+					return false;
+				}
+
+				var at_the = email_val.indexOf("@");
+				var dot = email_val.indexOf(".");
+				var split_at = email_val.split("@");
+				var split_dot = email_val.split(".");
+				if (split_at.length > 2) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				else if (dot == -1 || at_the == -1) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z0-9.]+$/i.test(split_at[1]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[0-9.]+$/i.test(split_at[0]) == true) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z0-9]+$/i.test(split_at[2]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z]+$/i.test(split_dot[split_dot.length - 1]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				var spli_at_dot = split_at[1].split(".");
+				if (/^[0-9.]+$/i.test(spli_at_dot[0]) == true) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				// }
+				if (mobile_val.length != 10) {
+					alert('Mobile number should be 10 digit long.')
+					return false;
+				}				
+				$('.book_now').attr('disabled','disabled');
+				$.post('landing.php',{name : name_val, email : email_val, mobile : mobile_val},function(resp){
+					$('.book_now').removeAttr('disabled','disabled');				
+					$('.overlayZ').css('display','none');
+					$('#msg').css('display','block');
+					
+					if(download != 0)
+					{
+					    
+					    $('#' + download + ' span').trigger('click'); 
+					  
+					}
+					window.location.href = "Thankyou-spacio.html";					
+					download = 0;
+					
+				});
+				
+				return false;
+			}
+		</script>			
+		
+		
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGLT8C7');</script>
+<!-- End Google Tag Manager -->
+		
+		
+	
+	
+
+
+
+		
+	</head>
+	
+	
+	
+	
+	
+	<body>
+	    <!-- SUBMIT FORM -->
+	    <a id="pdflnk" href="https://runal.com/pdf/Runal-Spacio-E-Brochure-V1.pdf" target="_blank" download><span></span></a>
+	    <a id="pdflnk2" href="https://runal.com/pdf/Spacio-Specifications.pdf" target="_blank" download><span></span></a>	    
+	    <div id="frm" class="overlayZ">
+			<div class="box">
+			    <div class="box_heading pull-left">Please Enter Your Details</div>
+				<div class="closeZ pull-right"><span onclick="$('.overlayZ').css('display','none');" style="color:#222 !important;" class="ti-close"></span></div>				
+			    <form id="form4" action="" onsubmit="return validate_me('form4')" class="form_wid_padding">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div>
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+			        <button class="btn btn-primary btn-sm book_now">
+					    Submit
+					</button>
+				</form>
+			</div>		
+		</div>
+	    <!-- SUBMIT FORM ends -->
+		<div id="msg" class="overlayZ">
+			<div class="box">
+				<div class="closeZ pull-right"><span onclick="$('.overlayZ').css('display','none');" style="color:#222 !important;" class="ti-close"></span></div>				
+				<div class="title">Thank You!</div>
+				<div class="desc">We will contact you shortly.</div>				
+			</div>		
+		</div>		    
+		<div class="col-sm-12 col-xs-12 landing_container zero_padding">
+			<div class="product_image col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="overlay"></div>
+				<img src="assets/images/spacio-bg.jpg" class="banner_image" />
+				<div class="product_image_text_top col-sm-12 col-xs-12">
+					<div class="container">
+						<div class="col-sm-12 col-xs-12 small_text_banner">2 & 3 RLK Smart Homes</div>
+						<div class="col-sm-12 col-xs-12 small_text_banner">
+							<span class="big_text_banner">Runal Spacio</span>, Kiwale, Pune
+						</div>
+					</div>
+				</div>
+				<img src="assets/images/logo.jpg" class="landing_banner_logo_img" />
+				<div class="mobile_landing_top">
+					<a href="tel:9595300100">+ 91 9595 300 100</a>
+				</div>
+				<nav class="nav navbar-fixed-top hidden_navbar">
+					<div class="container">
+						<ul class="nav navbar-nav">
+							<li><a href="#overview" class="black_text">Overview</a></li>
+							<li><a href="#unit_details" class="black_text">Unit Details</a></li>
+							<li><a href="#gallery" class="black_text" >Gallery</a></li>
+							<li><a href="#amenities" class="black_text">Amenities</a></li>
+							<li><a href="#specifications" class="black_text">Specifications</a></li>
+							<li><a href="#location" class="black_text" >Location</a></li>
+							<li><a href="#about_us" class="black_text" >About Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="container product_details">
+				<div class="fixed_price_div">
+					<div class="text-center light_color">
+						<h5>MahaRERA No. P52100019467</h5>
+					</div>
+					<div class="text-center fixed_price_heading">
+						<div class="light_color price_heading_subs">I'm interested to buy property</div>
+						<div class="dark_color price_heading_head">Runal Spacio</div>
+					</div>
+					<div class="margin_top_10">
+					    <form id="form1" action="" onsubmit="return validate_me('form1');">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+					</div>
+					<div class="book_now_div">
+						<button class="btn btn-default book_now">
+							<small class="glyphicon glyphicon-phone-alt"></small> 
+							&nbsp;Get Call Back
+						</button>
+						</form>
+					</div>
+					<!--div class="text-center">
+						<h5><small class="text-uppercase">We never spam</small></h5>
+					</div-->
+					<div class="text-center">
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+				</div>
+				<div class="fixed_price_div_hidden">
+					<div class="text-center light_color">
+						<h5>MahaRERA No. P52100019467</h5>
+					</div>
+					<div class="text-center fixed_price_heading">
+						<div class="light_color price_heading_subs">I'm interested to buy property in</div>
+						<div class="dark_color price_heading_head">Runal Spacio</div>
+					</div>
+					<div class="margin_top_10">
+					    <form id="form2" action="" onsubmit="return validate_me('form2')">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+					</div>
+					<div class="book_now_div">
+						<button class="btn btn-default book_now">
+							<small class="glyphicon glyphicon-phone-alt"></small> 
+							&nbsp;Get Call Back
+						</button>
+						</form>
+					</div>
+					<!--div class="text-center">
+						<h5><small class="text-uppercase">We never spam</small></h5>
+					</div-->
+					<div class="text-center">
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+				</div>
+				<div class="product_description col-lg-8 col-md-7 col-sm-12 col-xs-12">
+					<div class="price_div zero_padding col-sm-12 col-xs-12">
+						<div class="text-center fixed_price_heading">
+							<div class="light_color price_heading_subs zero_padding">I'm interested to buy property in</div>
+							<div class="dark_color price_heading_head zero_padding">Runal Spacio</div>
+						</div>
+						<div class="margin_top_10">
+                        <form id="form3" action="" onsubmit="return validate_me('form3')">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+						</div>
+						<div class="book_now_div">
+							<button class="btn btn-default book_now">
+								<small class="glyphicon glyphicon-phone-alt"></small> 
+								&nbsp;Get Call Back
+							</button>
+							</form>
+						</div>
+						<!--div class="text-center">
+							<h5><small class="text-uppercase">We never spam</small></h5>
+						</div-->
+						<div class="text-center">
+							<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+						</div>
+					</div>
+					<div class="col-sm-12 col-xs-12 zero_padding">
+						<ul class="nav navbar-nav landing_page_visible_navigation hidden-xs">
+							<li class="active"><a href="#overview" class="black_text visible_nav_a">Overview</a></li>
+							<li><a href="#unit_details" class="black_text visible_nav_a">Unit Details</a></li>
+							<li><a href="#gallery" class="black_text visible_nav_a" >Gallery</a></li>
+							<li><a href="#amenities" class="black_text visible_nav_a">Amenities</a></li>
+							<li><a href="#specifications" class="black_text visible_nav_a">Specifications</a></li>
+							<li><a href="#location" class="black_text visible_nav_a" >Location</a></li>
+							<li><a href="#about_us" class="black_text visible_nav_a" >About Us</a></li>
+						</ul>
+					</div>
+					<div class="overview zero_padding col-sm-12 col-xs-12" id="overview">
+						<div class="main_heading">Property Highlights</div>
+						<div class="content">
+							<div class="col-sm-12 col-xs-12 zero_padding">
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/Apartment.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">2 & 3 RLK</div>
+										<div class="content_description light_color"><small>Smart Homes</small></div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/area.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Carpet Area</div>
+										<div class="content_description light_color"><small>672 sq. ft - 900 sq. ft</small></div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/price-tag.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Price</div>
+										<div class="content_description light_color"><small>Starting from 56.9 Lacs</small></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 zero_padding">
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/key.png">
+									</div>
+									
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Possession</div>
+										<div class="content_description light_color"><small>Dec 2022</small></div>
+									</div> 
+								</div>
+								<!--
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<div class="col-sm-2 col-xs-2 zero_padding property_highlights_icon">
+										<img src="assets/images/icons/icon_5.png">
+									</div>
+									<div class="col-sm-10 col-xs-10">
+										<div class="content_head dark_color">Dec'19</div>
+										<div class="content_description light_color"><small>Possession Date(s)</small></div>
+									</div>
+								</div> !-->
+								
+								<div class="col-sm-4 col-xs-12 zero_padding property_highlights_block">
+									<button onclick="download = 'pdflnk';$('#frm').css('display','block');" class="btn btn-default download_btn">Download Brochure</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inclusion zero_padding col-sm-12 col-xs-12" id="unit_details">
+						<div class="main_heading">Unit Details</div>
+						<div class="content col-sm-12 col-xs-12">
+							<ul class="nav nav-tabs customized_landing_tabs">
+							    	
+								<li class="active"><a data-toggle="tab" href="#unit_details_two_bhk">2 RLK Even</a></li>
+								<li><a data-toggle="tab" href="#unit_details_two_bhk_odd">2 RLK Odd</a></li>
+								<li><a data-toggle="tab" href="#unit_details_three_bhk">3 RLK Even</a></li>
+								<li><a data-toggle="tab" href="#unit_details_three_bhk_odd">3 RLK Odd</a></li>
+							
+							</ul>
+							<div class="tab-content col-sm-12 col-xs-12">
+								<div id="unit_details_two_bhk" class="col-sm-12 col-xs-12 tab-pane fade in active zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding table-responsive">
+										<table class="col-sm-12 col-xs-12 table landing_custom_table zero_padding">
+											<thead>
+												<tr>
+													<th>Carpet Area</th>
+													<th>Builder Price</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+											    <tr>
+													
+													<td>
+														<div class="dark_color">685 sq ft</div>
+														<small class="light_color">(2RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">52 .9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												
+												<tr>
+													
+													<td>
+														<div class="dark_color">687 sq ft</div>
+														<small class="light_color">(2RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">53.0 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													
+													<td>
+														<div class="dark_color">711 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">54.7 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">727 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">55.9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">729 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">56.0 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+													<tr>
+													<td>
+														<div class="dark_color">742 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">56.9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">743 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">57.0 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+								
+								
+								<div id="unit_details_two_bhk_odd" class="col-sm-12 col-xs-12 tab-pane fade in zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding table-responsive">
+										<table class="col-sm-12 col-xs-12 table landing_custom_table zero_padding">
+											<thead>
+												<tr>
+													<th>Carpet Area</th>
+													<th>Builder Price</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+											   
+												
+												<tr>
+													
+													<td>
+														<div class="dark_color">672 sq ft</div>
+														<small class="light_color">(2RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">51.9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													
+													<td>
+														<div class="dark_color">674 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">52.1 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">679 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">52.5 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">691 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">53.3 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+													<tr>
+													<td>
+														<div class="dark_color">692 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">53.3 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">705 sq ft</div>
+														<small class="light_color">(2RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">54.3 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+								
+								<!-- Three BHk Odd !-->
+								
+									<div id="unit_details_three_bhk_odd" class="col-sm-12 col-xs-12 tab-pane fade in zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding table-responsive">
+										<table class="col-sm-12 col-xs-12 table landing_custom_table zero_padding">
+											<thead>
+												<tr>
+													<th>Carpet Area</th>
+													<th>Builder Price</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+											    <tr>
+													
+													<td>
+														<div class="dark_color">799 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">60.9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Nows</button>
+													</td>
+												</tr>
+												
+												<tr>
+													
+													<td>
+														<div class="dark_color">798 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">60.9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													
+													<td>
+														<div class="dark_color">833 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">63.3 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">835 sq ft</div>
+														<small class="light_color">(3RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">63.5 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">837 sq ft</div>
+														<small class="light_color">(3RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">63.6 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">802 sq ft</div>
+														<small class="light_color">(3RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">61.1 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">900 sq ft</div>
+														<small class="light_color">(3RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">68.1 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+								
+								
+								<div id="unit_details_three_bhk" class="col-sm-12 col-xs-12 tab-pane fade zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding table-responsive">
+										<table class="col-sm-12 col-xs-12 table landing_custom_table zero_padding">
+											<thead>
+												<tr>
+													<th>Carpet Area</th>
+													<th>Builder Price</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="dark_color">809 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">61.7 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">811 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">61.8 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">841 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">63.9 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">846 sq ft</div>
+														<small class="light_color">(3RLK+1T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">64.3 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="dark_color">885 sq ft</div>
+														<small class="light_color">(3RLK+2T)</small>
+													</td>
+													<td>
+														<div class="rupee_symbol_before unit_details_builder_price">67.1 L</div>
+														<small class="light_color">+(Gov. Taxes)</br></small>
+													</td>
+													<td class="text-center">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Enquire Now</button>
+													</td>
+												</tr>
+												
+												
+											
+											
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inclusion zero_padding col-sm-12 col-xs-12" id="gallery">
+						<div class="main_heading">Gallery</div>
+						<div class="content col-sm-12 col-xs-12">
+							<ul class="nav nav-tabs customized_landing_tabs">
+							    <li class="active"><a data-toggle="tab" href="#elevation">Elevation</a></li>
+								<li><a data-toggle="tab" href="#masterlayout">Master Layout</a></li>
+								<li><a data-toggle="tab" href="#floor_plans">Floor Plans</a></li>
+									<li><a data-toggle="tab" href="#unit_plans">Unit Plans</a></li>
+									<li><a data-toggle="tab" href="#construction">Construction Updates</a></li>
+								
+							</ul>
+							
+							
+									
+						<div class="tab-content col-sm-12 col-xs-12">
+						
+							<div id="elevation" class="col-sm-12 col-xs-12 tab-pane fade in active">
+								 
+								        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/spacio-elevation-night.jpg"><img src="assets/images/spacio/elevation/spacio-elevation-night.jpg" class="preloading"></a>
+										</div>
+							            </div>
+							            
+							            <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/gym.jpg"><img src="assets/images/spacio/elevation/gym.jpg" class="preloading"></a>
+										</div>
+							            </div>
+							            
+							            <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/clubhouse.jpg"><img src="assets/images/spacio/elevation/clubhouse.jpg" class="preloading"></a>
+										</div>
+							            </div>
+							            
+							            <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/community-hall.jpg"><img src="assets/images/spacio/elevation/community-hall.jpg" class="preloading"></a>
+										</div>
+							            </div>
+							            
+							         <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/podium.jpg"><img src="assets/images/spacio/elevation/podium.jpg" class="preloading"></a>
+										</div>
+							            </div>
+							            
+							             <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/indoor-games.jpg"><img src="assets/images/spacio/elevation/indoor-games.jpg" class="preloading"></a>
+										</div>
+							            </div>
+							            
+							             <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/elevation/kids-play.JPG"><img src="assets/images/spacio/elevation/kids-play.JPG" class="preloading"></a>
+										</div>
+							            </div>
+									
+									    
+									    
+									
+						</div>
+								
+					
+								<div id="masterlayout" class="col-sm-12 col-xs-12 tab-pane fade ">
+								 
+								<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/spacio/floorplan/Master-Layout.jpg"><img src="assets/images/spacio/floorplan/Master-Layout.jpg" class="preloading"></a>
+										</div>
+									</div>
+								        <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/promoters-proposed-layout.jpg"><img src="assets/images/spacio/floorplan/promoters-proposed-layout.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<!-- div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images" href="assets/images/layout.jpg"><img src="assets/images/layout.jpg" class="preloading"></a>
+										</div>
+									</div -->
+									
+									
+								
+									
+								</div>
+								
+								<div id="unit_plans" class="col-sm-12 col-xs-12 tab-pane fade">
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/A-401-501-EO.jpg"><img src="assets/images/spacio/floorplan/A-401-501-EO.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+								<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/A-402-502-EO.jpg"><img src="assets/images/spacio/floorplan/A-402-502-EO.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/A-403-503-EO.jpg"><img src="assets/images/spacio/floorplan/A-403-503-EO.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/A-404-504-EO.jpg"><img src="assets/images/spacio/floorplan/A-404-504-EO.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/B-401-501-EO.jpg"><img src="assets/images/spacio/floorplan/B-401-501-EO.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/B-402-502-EO.jpg"><img src="assets/images/spacio/floorplan/B-402-502-EO.jpg" class="preloading"></a>
+										</div>
+																								
+									</div>
+																	<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/C-401-501-EO.jpg"><img src="assets/images/spacio/floorplan/C-401-501-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+								
+								
+								
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/C-402-502-EO.jpg"><img src="assets/images/spacio/floorplan/C-402-502-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+								
+								
+								
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/C-403-503-EO.jpg"><img src="assets/images/spacio/floorplan/C-403-503-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+						
+								
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/C-404-504-EO.jpg"><img src="assets/images/spacio/floorplan/C-404-504-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+							
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/D-401-501-EO.jpg"><img src="assets/images/spacio/floorplan/D-401-501-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+								
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/D-402-502-EO.jpg"><img src="assets/images/spacio/floorplan/D-402-502-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+							<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/D-403-503-EO.jpg"><img src="assets/images/spacio/floorplan/D-403-503-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/E-401-501-EO.jpg"><img src="assets/images/spacio/floorplan/E-401-501-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/E-402-502-EO.jpg"><img src="assets/images/spacio/floorplan/E-402-502-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/E-403-503-EO.jpg"><img src="assets/images/spacio/floorplan/E-403-503-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+								<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/F-401-501-EO.jpg"><img src="assets/images/spacio/floorplan/F-401-501-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/F-402-502-EO.jpg"><img src="assets/images/spacio/floorplan/F-402-502-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/F-403-503-EO.jpg"><img src="assets/images/spacio/floorplan/F-403-503-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/F-404-504-EO.jpg"><img src="assets/images/spacio/floorplan/F-404-504-EO.jpg" class="preloading"></a>
+										</div>
+									</div>
+								
+															
+										
+								</div>
+								
+										<div id="floor_plans" class="col-sm-12 col-xs-12 tab-pane fade">
+								
+								
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/Even-Floor-Plan.jpg"><img src="assets/images/spacio/floorplan/Even-Floor-Plan.jpg" class="preloading"></a>
+										</div>
+									</div>
+								
+																<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images1" href="assets/images/spacio/floorplan/Odd-Floor-Plan.jpg"><img src="assets/images/spacio/floorplan/Odd-Floor-Plan.jpg" class="preloading"></a>
+										</div>
+									</div>
+								
+											</div>
+								
+								
+								<div id="construction" class="col-sm-12 col-xs-12 tab-pane fade">
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/nov-20.jpg"><img src="assets/images/nov-20.jpg" class="preloading"></a>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/nov2-20.jpg"><img src="assets/images/nov2-20.jpg" class="preloading"></a>
+										</div>
+									</div>	
+									<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12 property_gallery_image">
+										<div class="col-sm-12 col-xs-12">
+											<a data-fancybox="images2" href="assets/images/nov3-20.jpg"><img src="assets/images/nov3-20.jpg" class="preloading"></a>
+										</div>
+									</div>			
+
+
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="top_icons col-sm-12 col-xs-12 zero_padding" id="amenities">
+						<div class="main_heading">Amenities</div>
+						<div class="col-sm-12 col-xs-12 zero_padding">
+						
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/clubhouse.png" />
+								<div class="text">Community Hall cum Club house</div>
+							</div>		
+							
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Multi-ground.png" />
+								<div class="text">Multipurpose Ground</div>
+							</div>
+							
+							
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/gym.png" />
+								<div class="text">Fitness Centre</div>
+							</div>
+							
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Badminton-court.png" />
+								<div class="text">Indoor Games</div>
+							</div>
+								
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/kids-play-area.png" />
+								<div class="text">Kid's Play Area</div>
+							</div>
+							
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/garden.png" />
+								<div class="text">Landscaped Gardens</div>
+							</div>
+							
+						</div>
+						<div class="col-sm-12 col-xs-12 zero_padding">
+						
+								
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/cctv.png" />
+								<div class="text">24x7 Security</div>
+							</div>
+							<div class="icon_block col-sm-2 col-xs-4">
+								<img src="assets/images/icons/Backup.png" />
+								<div class="text">Power Backup</div>
+							</div>
+						</div>
+					</div>
+					<div class="things_to_remember zero_padding col-sm-12 col-xs-12" id="specifications">
+						<div class="main_heading">Specifications</div>
+						<div class="content spefications_main_container">
+							<div class="col-sm-12 col-xs-12 zero_padding">
+								<div class="col-sm-6 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+										<label>
+										<!--img src="assets/images/enq1.png" /!-->
+											Building & Project
+										</label>
+									</div>
+									<label>
+									A. Building and Infrastructure
+										</label>
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											RCC frame structure.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											AAC/Brick masonry for internal and external walls.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+									    	Water storage tanks as per PCMC norms.
+										</div>
+										<label>
+										<!--img src="assets/images/enq1.png" /!-->
+											B. Plaster
+										</label>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											Internal sand faced plaster with gypsum finish.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+									    	External sand faced plaster.
+										</div>
+										
+										
+									</div>
+									
+								</div>
+								<div class="col-sm-6 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+										<label>
+											<!--img src="assets/images/p.png" / !-->
+											
+										</label>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+									<label>
+										<!--img src="assets/images/enq1.png" /!-->
+											C. Security
+										</label>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											Compound wall fencing with mild steel compound gate on front side.
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											Fire-fighting systems as per fire department norms.
+										</div>
+								    	<div class="col-sm-12 col-xs-12 zero_padding block">
+											24*7 security system with security cabin.
+ 
+										</div>
+										<div class="col-sm-12 col-xs-12 zero_padding block">
+											Video door phone
+										</div>
+										
+						    		</div>
+						    	</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 zero_padding text-center spefications_download_btn_block">
+								<button onclick="download = 'pdflnk2';$('#frm').css('display','block');" class="btn btn-default download_btn">Download Complete List</button>
+							</div>
+						</div>
+					</div>
+					<div class="happening_place zero_padding col-sm-12 col-xs-12" id="location">
+						<div class="main_heading">Location</div>
+						<div class="content">
+							<div id="product_details_map"></div>
+							<div class="content spefications_main_container">
+    							<div class="col-sm-12 col-xs-12 zero_padding">
+    								<div class="col-sm-6 col-xs-12 zero_padding">
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+    										<label>
+    										
+    										</label>
+    									</div>
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Mumbai-Pune Expressway
+    
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												0.60 km
+													</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												D Mart 
+    
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												2.0 km
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Kidzee 
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												4.9 km
+    											</div>
+    										</div>
+											    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Aditya Birla Hospital
+    												</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												5.6 km
+    											</div>
+    										</div>
+    										<!--
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Internal
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Laminatd Flush Door
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Main
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Laminatd Flush Door
+    											</div>
+    										</div> !-->
+    									</div>
+    								</div>
+    								<div class="col-sm-6 col-xs-12 zero_padding">
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_heading">
+    										<label>
+    											
+    										</label>
+    									</div>
+    									<div class="col-sm-12 col-xs-12 zero_padding spefications_content">
+
+    										
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    											Hinjawadi IT Park
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												10 km
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Bhumkar Chowk
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												6.8 km 
+    											</div>
+    										</div>
+											<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Aundh-Ravet BRTS Corridor
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												0.75 km
+    											</div>
+    										</div>
+    									<!--	<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Kitchen
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Vitrified Tiles
+    											</div>
+    										</div>
+    										<div class="col-sm-12 col-xs-12 zero_padding block">
+    											<div class="col-sm-6 col-xs-12 light_color zero_padding">
+    												Other Bedroom
+    											</div>
+    											<div class="col-sm-6 col-xs-12 dark_color zero_padding">
+    												Vitrified Tiles
+    											</div>
+    										</div> !-->
+    										
+    									</div>
+    								</div>
+    						    </div>
+						    </div>
+				    	</div>
+				    </div>
+					<div class="happening_place zero_padding col-sm-12 col-xs-12" id="about_us">
+						<div class="main_heading">About Us</div>
+						<div class="content">
+							<div class="col-sm-12 col-xs-12 zero_padding about_us_block">
+								<div class="col-md-5 col-sm-4 col-xs-12 zero_padding about_logo_div">
+									<img src="assets/images/logo.jpg" />
+								</div>
+								<div class="col-md-7 col-sm-8 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding about_us_details_block">
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												25
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Years of</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Experience
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												24
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Total</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Projects
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												02
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Ongoing</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Projects
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding about_us_description">
+										Founded in 1993,  Runal Developers is a real estate construction company that is based in Pune, with a belief based on progressive ideas, trust and reliability. The company has been carving a niche through consistent delivery of awe-inspiring residences and commercial spaces. At Runal Developers, we believe that the value of a human smile is the best value you can derive ever.
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 more_properties_block zero_padding">
+								<div class="col-sm-12 col-xs-12 heading zero_padding">  
+								<div class="main_heading">More Properties from Runal Developers</div>	
+								</div>
+								<div id="myCarousel" class="carousel slide col-sm-12 col-xs-12 zero_padding" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+										
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+													<a href="runal-gateway-phase-3.html"><img src="assets/images/rg-phase-3.jpg" width="350" height="200" /></a>
+													</div>
+													<div class="highliter"><span>New Launch</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Phase - III, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 BHKs & 3 BHKs In Kiwale
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100024155
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												</div>
+											</div>
+										
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<a href="runal-bungalows.html"><img src="assets/images/runal-bunglows.jpg" width="350" height="200" /></a>
+													</div>
+													<div class="highliter"><span>Sold Out</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Phase - II, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															3 BHK Bungalows in Kiwale
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100019500
+														</div>
+													</div>
+													
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button class="btn btn-default download_btn">Sold Out</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<!--div class="item">
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<img src="assets/images/runal-bunglows.jpg" />
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Spacio, Ravet Pradhikaran</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															3/ 4 RLKs Bunglows in Ravet @ 1.06 Cr Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100002021
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												</div>
+											</div>
+										</div -->
+										
+										
+										<!--div class="item">
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<img src="assets/images/runal-elanza.jpg" />
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Elanza, Ravet Pradhikaran</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 & 3 BHK in Ravet Pradhikaran
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100002255
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												</div>
+											</div>
+										</div -->
+									</div>
+									
+									<!--ol class="carousel-indicators more_properties_slider_indicators">
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+										<li data-target="#myCarousel" data-slide-to="2"></li>
+									  </ol-->
+									  
+									<!-- Left and right controls -->
+									<!--a class="left carousel-control" href="#myCarousel" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="right carousel-control" href="#myCarousel" data-slide="next">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</a-->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="col-sm-12 col-xs-12 landing_footer text-center">
+				<div class="col-sm-12 col-xs-12" >
+					For enquiries or site visits:
+				</div>
+				<div class="col-sm-12 col-xs-12">
+					<h1><b>+ 91 9595 300 100</b></h1>
+				</div>
+				<div class="col-sm-12 col-xs-12 text-uppercase dark_color">
+					<h4>SITE ADDRESS:</h4>
+				</div>
+				<div class="col-sm-12 col-xs-12 light_color">
+					<h5>S.No.- 83/2A/1/3 & 83/2B/1/2, Kiwale, Near Sentosa Resorts Ravet, Off Mumbai-Pune Expressway,<br>
+					Pune- 412101 India <h5>
+				</div>
+				<div class="col-sm-12 col-xs-12 light_color">
+					<p> The project has been registered via MahaRERA Registration No.: P52100019467 and avialable on website <a href="https://maharera.mahaonline.gov.in">https://maharera.mahaonline.gov.in</a> under registered projects<p>
+			
+			<!--project finance by !-->
+					<div class="finance_icon_block col-sm-12 col-xs-12  dark_color">
+								
+								<div class="financetext">A Project Financed By</div>
+								<img src="assets/images/bank-icons/tata-capital-n.jpg" />
+							</div>
+					<!--project finance by !-->
+				
+			
+			
+			
+			
+			
+			
+				</div>
+			</div>
+			<div class="col-sm-12 col-xs-12 landing_copyright_footer text-center">
+				<copy></copy> 2020 - Runal Developers ISO 9001: 2015 Certified | <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+			</div>
+		</div>
+		<script src="assets/jq/bootstrap.min.js"></script>
+		<script src="assets/jq/runal.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4THXHUqfrZeTN3hXqwTDMvnNqRMMr4Do&callback=myMap" type="text/javascript"></script>
+		<script>
+            function myMap() {
+                var mapOptions = {
+                    zoom: 10,
+    				scrollwheel:true,
+    				center: new google.maps.LatLng(18.655661, 73.732016),
+                    styles: [{ "featureType": "road", "elementType": "geometry", "stylers": [{ "visibility": "off"}] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "visibility": "off"}] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#FFFAF0"}] }, { "featureType": "water", "stylers": [{ "color": "#d9edf7"}] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off"}] }, { "featureType": "transit", "stylers": [{ "visibility": "off"}] }, { "featureType": "administrative", "elementType": "geometry", "stylers": [{ "lightness": 40}] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "visibility": "on", "color": "#c5dac6"}] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#CCAA88" }, { "lightness": 40}] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#EEEEEE"}] }, { "featureType": "road", "stylers": [{ "visibility": "simplified" }, { "color": "#FF0000" }, { "gamma": 9}] }, { "featureType": "road.highway", "stylers": [{ "visibility": "on" }, { "color": "#FF0000" }, { "gamma": 8}] }, { "featureType": "road.highway.controlled_access", "stylers": [{ "visibility": "on" }, { "color": "#FF0000" }, { "gamma": 4}] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off"}] }, { "featureType": "poi.government", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#DDDDDD"}] }, { "featureType": "transit.station", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#CCCCCC"}] }, { "featureType": "transit.line", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#AAAAAA" }, { "gamma": 4}]}]
+                }
+                var map = new google.maps.Map(document.getElementById('product_details_map'),
+                                    mapOptions);
+    
+                var image = 'images/pin-spacio.png';
+                var myLatLng = new google.maps.LatLng(18.655661, 73.732016);
+                var beachMarker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        
+        
+        
+         
+        <div id="slideout">
+            <a href="https://wa.me/919168666409?text=Hello!%20I'm%20interested%20in%20*Runal%20Spacio*%20property.%20Please%20send%20more%20details.">
+	            <div class="cta-left"><div class="whatsimg"></div>
+    		         <div class="cta-right">Chat on Whatsapp</div>
+                </div> 
+            </a>
+        </div>
+        <div class="sticky_enquiry">
+            <div class="sticky_left pull-left">
+            
+            
+                <i class="ti-user"></i>&nbsp;     <href="javascript:void(0);" onclick="download = 0;$('#frm').css('display','block');">Enquire Now
+            </div>
+            <a href="tel:9595300100" class="sticky_right pull-left">
+                <i class="ti-mobile"></i>&nbsp; Call Us
+            </a>
+        </div>
+        
+        
+        
+        
+	</body>
+</html>

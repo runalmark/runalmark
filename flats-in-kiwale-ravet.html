@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex">
+		<title>Runal Gateway - 2 & 3 BHK Flats for Sale in Kiwale</title>
+		<link href='https://fonts.googleapis.com/css?family=Poppins|Lato' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="assets/css/themify/themify-icons.css" />
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/landing.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+		<script src="assets/jq/jquery-3.1.0.js"></script>
+		<script>
+		    var download = 0;
+			function validate_me(z)
+			{
+
+				var name_val = document.getElementById(z).elements.namedItem("name").value;
+				var mobile_val = document.getElementById(z).elements.namedItem("mobile").value;				
+				var email_val = document.getElementById(z).elements.namedItem("email").value;	
+
+				if (name_val == "") {
+					alert('Please enter name.')
+					return false;
+				}
+				if (email_val == "") {
+					alert('Please enter Email Id.')
+					return false;
+				}
+
+				var at_the = email_val.indexOf("@");
+				var dot = email_val.indexOf(".");
+				var split_at = email_val.split("@");
+				var split_dot = email_val.split(".");
+				if (split_at.length > 2) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				else if (dot == -1 || at_the == -1) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z0-9.]+$/i.test(split_at[1]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[0-9.]+$/i.test(split_at[0]) == true) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z0-9]+$/i.test(split_at[2]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+				else if (/^[a-z]+$/i.test(split_dot[split_dot.length - 1]) == false) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				var spli_at_dot = split_at[1].split(".");
+				if (/^[0-9.]+$/i.test(spli_at_dot[0]) == true) {
+					alert('Please enter valid email address.')
+					return false;
+				}
+
+				// }
+				if (mobile_val.length != 10) {
+					alert('Mobile number should be 10 digit long.')
+					return false;
+				}				
+				$('.book_now').attr('disabled','disabled');
+				$.post('landing.php',{name : name_val, email : email_val, mobile : mobile_val},function(resp){
+					$('.book_now').removeAttr('disabled','disabled');				
+					$('.overlayZ').css('display','none');
+					$('#msg').css('display','block');
+					
+					if(download != 0)
+					{
+					    
+					    $('#' + download + ' span').trigger('click'); 
+					  
+					}
+					window.location.href = "Thankyou-apartments.html";					
+					download = 0;
+					
+				});
+				
+				return false;
+			}
+		</script>			
+		
+		
+		
+	
+		
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGLT8C7');</script>
+<!-- End Google Tag Manager -->
+		
+		
+	
+	<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=98ad5b280d1cc' async='true'></script>
+
+
+
+		
+	</head>
+	
+	
+	
+	
+	
+	<body>
+	    <!-- SUBMIT FORM -->
+	    <a id="pdflnk" href="https://runal.com/pdf/Runal-Gateway-E-Broucher-V5.pdf" target="_blank" download><span></span></a>
+	    <a id="pdflnk2" href="https://runal.com/pdf/gateway-specs.pdf" target="_blank" download><span></span></a>	    
+	    <div id="frm" class="overlayZ">
+			<div class="box">
+			    <div class="box_heading pull-left">Please Enter Your Details</div>
+				<div class="closeZ pull-right"><span onclick="$('.overlayZ').css('display','none');" style="color:#222 !important;" class="ti-close"></span></div>				
+			    <form id="form4" action="" onsubmit="return validate_me('form4')" class="form_wid_padding">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+						<small class="help-block light_color"></small>
+					</div>
+					<div>
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+						
+					</div>
+			        <button class="btn btn-primary btn-sm book_now">
+					    Submit
+					</button>
+				</form>
+			</div>		
+		</div>
+	    <!-- SUBMIT FORM ends -->
+		<div id="msg" class="overlayZ">
+			<div class="box">
+				<div class="closeZ pull-right"><span onclick="$('.overlayZ').css('display','none');" style="color:#222 !important;" class="ti-close"></span></div>				
+				<div class="title">Thank You!</div>
+				<div class="desc">We will contact you shortly.</div>				
+			</div>		
+		</div>		    
+		<div class="col-sm-12 col-xs-12 landing_container zero_padding">
+			<div class="product_image col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="overlay"></div>
+				<img src="assets/images/combine.png" class="banner_image" />
+				
+				<div class="product_image_text_top col-sm-12 col-xs-12">
+					<div class="container">
+						<div class="col-sm-12 col-xs-12 small_text_banner">Runal Developers</div>
+						<div class="col-sm-12 col-xs-12 small_text_banner">
+							<span class="big_text_banner">2 & 3 BHK Residential Apartments</span>, Kiwale Ravet
+						</div>
+					</div>
+				</div>
+				<img src="assets/images/logo.jpg" class="landing_banner_logo_img" />
+				<div class="mobile_landing_top">
+					<a href="tel:9595300100">+ 91 9595 300 100</a>
+				</div>
+				<nav class="nav navbar-fixed-top hidden_navbar">
+					<div class="container">
+						<ul class="nav navbar-nav">
+							<li><a href="#overview" class="black_text">Overview</a></li>
+							<li><a href="#unit_details" class="black_text">Unit Details</a></li>
+							<li><a href="#gallery" class="black_text" >Gallery</a></li>
+							<li><a href="#amenities" class="black_text">Amenities</a></li>
+							<li><a href="#specifications" class="black_text">Specifications</a></li>
+							<li><a href="#location" class="black_text" >Location</a></li>
+							<li><a href="#about_us" class="black_text" >About Us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="container product_details">
+				<div class="fixed_price_div">
+					<div class="text-center light_color">
+						
+					</div>
+					<div class="text-center fixed_price_heading">
+						<div class="light_color price_heading_subs">I'm interested to buy property</div>
+						<div class="dark_color price_heading_head">Get A Call Back</div>
+					</div>
+					<div class="margin_top_10">
+					    <form id="form1" action="" onsubmit="return validate_me('form1');">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+					</div>
+					<div class="book_now_div">
+						<button class="btn btn-default book_now">
+							<small class="glyphicon glyphicon-phone-alt"></small> 
+							&nbsp;Submit
+						</button>
+						</form>
+					</div>
+					<!--div class="text-center">
+						<h5><small class="text-uppercase">We never spam</small></h5>
+					</div-->
+					<div class="text-center">
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+				</div>
+				<div class="fixed_price_div_hidden">
+					<div class="text-center light_color">
+						
+					</div>
+					<div class="text-center fixed_price_heading">
+						<div class="light_color price_heading_subs">I'm interested to buy property in</div>
+						<div class="dark_color price_heading_head">Get A Call Back</div>
+					</div>
+					<div class="margin_top_10">
+					    <form id="form2" action="" onsubmit="return validate_me('form2')">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+					</div>
+					<div class="book_now_div">
+						<button class="btn btn-default book_now">
+							<small class="glyphicon glyphicon-phone-alt"></small> 
+							&nbsp;Submit
+						</button>
+						</form>
+					</div>
+					<!--div class="text-center">
+						<h5><small class="text-uppercase">We never spam</small></h5>
+					</div-->
+					<div class="text-center">
+						<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+					</div>
+				</div>
+				<div class="product_description col-lg-8 col-md-7 col-sm-12 col-xs-12">
+					<div class="price_div zero_padding col-sm-12 col-xs-12">
+						<div class="text-center fixed_price_heading">
+							<div class="light_color price_heading_subs zero_padding">I'm interested to buy property</div>
+							<div class="dark_color price_heading_head zero_padding">Get A Call Back</div>
+						</div>
+						<div class="margin_top_10">
+                        <form id="form3" action="" onsubmit="return validate_me('form3')">
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="name" class="form-control input-sm" placeholder="Name..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="mobile" class="form-control input-sm" placeholder="Mobile..." />
+							<small class="help-block light_color"></small>
+						</div>
+						<div class="col-sm-12 col-xs-12">
+							<input type="text" name="email" class="form-control input-sm" placeholder="Email Id..." />
+							<small class="help-block light_color"></small>
+						</div>
+						</div>
+						<div class="book_now_div">
+							<button class="btn btn-default book_now">
+								<small class="glyphicon glyphicon-phone-alt"></small> 
+								&nbsp;Submit
+							</button>
+							</form>
+						</div>
+						<!--div class="text-center">
+							<h5><small class="text-uppercase">We never spam</small></h5>
+						</div-->
+						<div class="text-center">
+							<h5><input type="checkbox" checked>&nbsp;<small>I have read <a href="privacy-policy.html" target="_blank">privacy policy</a></small></h5>
+						</div>
+					</div>
+					
+					
+			
+					
+					<div class="col-sm-12 col-xs-12 more_properties_block zero_padding">
+								<div class="col-sm-12 col-xs-12 heading zero_padding">  
+								<div class="main_heading">Properties in Kiwale-Ravet by Runal Developers</div>	
+								</div>
+								<div id="myCarousel" class="carousel slide col-sm-12 col-xs-12 zero_padding" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+										
+										
+										
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													
+															<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<a href="runal-gateway-phase-3.html"><img src="assets/images/rg-phase-3.jpg" width="350" height="200" /></a>
+													</div>
+													<div class="highliter"><span>Premium</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Phase - III, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 & 3 BHKs in Kiwale @ 70.5 Lac Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100024155
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												
+												</div>
+											</div>
+											
+													<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<a href="runal-spacio.html"><img src="assets/images/runal-spacio-min.jpg" width="350" height="200" /></a>
+													
+													
+														
+													</div>
+													<div class="highliter"><span>New Launch</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Spacio, Kiwale Ravet</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 & 3 RLK Apartments @ 51.9 + Taxes Lacs Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100019467
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+											</div>
+										</div>
+										
+										<div id="myCarousel" class="carousel slide col-sm-12 col-xs-12 zero_padding" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+										
+										
+										
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+											
+													
+													
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<a href="runal-gateway.html"><img src="assets/images/runal-gateway.jpg" width="350" height="200" /></a>
+													</div>
+													<div class="highliter"><span>Sold Out</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Phase - I, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															2 & 3 BHKs In Kiwale @ 66.5 Lac Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100002021
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Sold Out</button>
+													</div>
+													
+													
+													
+													
+													
+													
+														</div>
+											</div>
+											
+											
+													<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<a href="runal-bungalows.html"><img src="assets/images/runal-bunglows.jpg" width="350" height="200" /></a>
+								
+													</div>
+														<div class="highliter"><span>Sold Out</span></div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway Bungalows Phase II, Kiwale</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															3 & 4 BHKs Bungalows in Kiwale Ravet
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100019500
+														</div>
+													</div>
+													
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button onclick="download = 0;$('#frm').css('display','block');" class="btn btn-default download_btn">Sold Out</button>
+													</div>
+											
+											
+											
+										</div>			
+										</div>
+										</div>
+					</div>
+					</div>
+					<div class="happening_place zero_padding col-sm-12 col-xs-12" id="about_us">
+						<div class="main_heading">About Us</div>
+						<div class="content">
+							<div class="col-sm-12 col-xs-12 zero_padding about_us_block">
+								<div class="col-md-5 col-sm-4 col-xs-12 zero_padding about_logo_div">
+									<img src="assets/images/logo.jpg" />
+								</div>
+								<div class="col-md-7 col-sm-8 col-xs-12 zero_padding">
+									<div class="col-sm-12 col-xs-12 zero_padding about_us_details_block">
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												25
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Years of</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Experience
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												24
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Total</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Projects
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-4 col-xs-4 zero_padding about_us_small_blocks">
+											<div class="col-md-4 col-sm-3 col-xs-12 dark_color zero_padding left_main">
+												02
+											</div>
+											<div class="col-md-8 col-sm-9 col-xs-12 zero_padding">
+												<div class="col-sm-12 col-xs-12 light_color zero_padding right_head">
+													<small>Ongoing</small>
+												</div>
+												<div class="col-sm-12 col-xs-12 dark_color zero_padding right_description">
+													Projects
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 zero_padding about_us_description">
+										Founded in 1993,  Runal Developers is a real estate construction company that is based in Pune, with a belief based on progressive ideas, trust and reliability. The company has been carving a niche through consistent delivery of awe-inspiring residences and commercial spaces. At Runal Developers, we believe that the value of a human smile is the best value you can derive ever.
+									</div>
+								</div>
+							</div>
+							
+										<!--
+										<div class="item">
+											<div class="col-sm-6 col-xs-12 more_properties_inner_block text-center">
+												<div class="col-sm-12 col-xs-12 more_properties_inner_block_internal zero_padding">
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_image">
+														<img src="assets/images/runal-bunglows.jpg" />
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_content">
+														<div class="col-sm-12 col-xs-12">	
+															<b>Runal Gateway, Ravet Pradhikaran</b>
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															3/ 4 BHKs Bunglows in Ravet @ 1.06 Cr Onwards
+														</div>
+														<div class="col-sm-12 col-xs-12 dark_color">
+															MahaRERA No- P52100002021
+														</div>
+													</div>
+													<div class="col-sm-12 col-xs-12 zero_padding more_properties_btn">
+														<button class="btn btn-default download_btn">I'm Interested</button>
+													</div>
+												</div>
+											</div>
+										</div> !-->
+										
+										
+									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 col-xs-12 landing_footer text-center">
+				<div class="col-sm-12 col-xs-12" >
+					For enquiries or site visits:
+				</div>
+				<div class="col-sm-12 col-xs-12">
+					<h1><b>+ 91 9595 300 100</b></h1>
+				</div>
+				<div class="col-sm-12 col-xs-12 text-uppercase dark_color">
+					<h4>SITE ADDRESS:</h4>
+				</div>
+				<div class="col-sm-12 col-xs-12 light_color">
+					<h5>Runal Gateway,Near Sentosa Resorts Ravet, Off Pune-Mumbai Expressway,<br>
+					Pune- 412101 Maharashtra India <h5>
+				</div>
+				<div class="col-sm-12 col-xs-12 light_color">
+
+				<!--project finance by !-->
+					<div class="finance_icon_block col-sm-12 col-xs-12  dark_color">
+								
+								<div class="financetext">A Project Financed By</div>
+								<img src="assets/images/bank-icons/tata-capital-n.jpg" />
+							</div>
+					<!--project finance by !-->
+					
+				
+				</div>
+			</div>
+			<div class="col-sm-12 col-xs-12 landing_copyright_footer text-center">
+				<copy></copy> 2020 - Runal Developers ISO 9001: 2015 Certified | <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+			</div>
+		</div>
+		<script src="assets/jq/bootstrap.min.js"></script>
+		<script src="assets/jq/runal.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4THXHUqfrZeTN3hXqwTDMvnNqRMMr4Do&callback=myMap" type="text/javascript"></script>
+		<script>
+            function myMap() {
+                var mapOptions = {
+                    zoom: 10,
+    				scrollwheel:true,
+    				center: new google.maps.LatLng(18.655661, 73.732016),
+                    styles: [{ "featureType": "road", "elementType": "geometry", "stylers": [{ "visibility": "off"}] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "visibility": "off"}] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#FFFAF0"}] }, { "featureType": "water", "stylers": [{ "color": "#d9edf7"}] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off"}] }, { "featureType": "transit", "stylers": [{ "visibility": "off"}] }, { "featureType": "administrative", "elementType": "geometry", "stylers": [{ "lightness": 40}] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "visibility": "on", "color": "#c5dac6"}] }, { "featureType": "landscape.natural.terrain", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#CCAA88" }, { "lightness": 40}] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#EEEEEE"}] }, { "featureType": "road", "stylers": [{ "visibility": "simplified" }, { "color": "#FF0000" }, { "gamma": 9}] }, { "featureType": "road.highway", "stylers": [{ "visibility": "on" }, { "color": "#FF0000" }, { "gamma": 8}] }, { "featureType": "road.highway.controlled_access", "stylers": [{ "visibility": "on" }, { "color": "#FF0000" }, { "gamma": 4}] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off"}] }, { "featureType": "poi.government", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#DDDDDD"}] }, { "featureType": "transit.station", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#CCCCCC"}] }, { "featureType": "transit.line", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "color": "#AAAAAA" }, { "gamma": 4}]}]
+                }
+                var map = new google.maps.Map(document.getElementById('product_details_map'),
+                                    mapOptions);
+    
+                var image = 'images/pin-gateway.png';
+                var myLatLng = new google.maps.LatLng(18.655661, 73.732016);
+                var beachMarker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+         
+         <!--
+         <div id="slideout"><a href="https://wa.me/919168666409?text= Please%20click%20on%20'Send'%20button%20to%20Schedule%20construction%20site%20visit%20with%20us." target="_blank">
+	        <div class="cta-left"><div class="whatsimg"></div>
+		        <div class="cta-right">Organise Site Visit
+            </div>
+
+                </div> 
+
+            </a>
+            </div>
+		  <!-->
+         
+          
+             <div id="slideout">
+            <a href="https://wa.me/919168666409?text=Hello!%20I'm%20interested%20in%20*Runal's%20Projects*%20.%20Please%20send%20more%20details.">
+	            <div class="cta-left"><div class="whatsimg"></div>
+    		         <div class="cta-right">Chat on Whatsapp</div>
+                </div> 
+            </a>
+        </div>
+        <div class="sticky_enquiry">
+            <div class="sticky_left pull-left">
+            
+            
+                <i class="ti-user"></i>&nbsp;     <href="javascript:void(0);" onclick="download = 0;$('#frm').css('display','block');">Enquire Now
+            </div>
+            <a href="tel:9595300100" class="sticky_right pull-left">
+                <i class="ti-mobile"></i>&nbsp; Call Us
+            </a>
+        </div>
+          
+         
+            
+            </div>
+		  <!-->
+         
+       
+        
+	</body>
+</html>
